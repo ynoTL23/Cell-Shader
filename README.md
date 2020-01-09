@@ -23,4 +23,4 @@ Ultimately, the user will be able to:
 
 ---
 
-## [Demo the pages here](https://lehman-cuny2x.github.io/01-06-2020-day-3-dom-challenge-ynoTL23/index.html)
+## [Demo the page here](https://lehman-cuny2x.github.io/01-08-2020-day-5-javascript-dom-challenges-ii-ynoTL23/)
