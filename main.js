@@ -1,8 +1,11 @@
-let currentColor = document.querySelector('#color-menu').value
+let currentColor = getSelectedColor = () => {
+    // get the selected color value
+    return document.querySelector('#color-menu').value
+}
 
 // Set the current color
 document.querySelector('#color-menu').addEventListener('change', () => {
-    currentColor = document.querySelector('#color-menu').value
+    currentColor = getSelectedColor()
 })
 
 
@@ -124,6 +127,8 @@ deleteCol = () => {
 fillAll = () => {
     // grab all the cells
     const cells = document.querySelectorAll('td')
+    currentColor = getSelectedColor()
+
     cells.forEach((cell) => {
         changeCellColor(cell)
     })
@@ -153,12 +158,12 @@ reset = () => {
         // fill in the cells
         changeCellColor(cell)
     })
+    currentColor = getSelectedColor()
 }
 
 // change the cell's color
 changeCellColor = (cell) => {
     cell.style.backgroundColor = currentColor
-
 }
 
 // init and add listeners for table/cells
