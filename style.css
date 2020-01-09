@@ -1,5 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+	margin: auto;
+	padding: 1rem 0;
+	position: sticky;
+	top: 0px;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+	font-size: 1.5rem;
+	text-align: center;
+
+	background: #757f9a;
+	background: -webkit-linear-gradient(to top, #d7dde8, #757f9a);
+	background: linear-gradient(to top, #d7dde8, #757f9a);
+}
+
+header h1 {
+	padding: 1.5rem;
+}
+
+/* COMMAND CENTER */
+/* Options to manipulate the grid */
+header .command-center {
+	margin: auto;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+header .command-center .buttons,
+header .command-center select {
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	margin: 0 1rem;
+}
+
+body .content {
+	height: 100vh;
+
+	background: #2980b9;
+	background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+	background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+}
+
+body .content #grid {
+	width: 90%;
+	margin: auto;
+
+	border: 1px red solid;
+}
+
+body .content table {
+	margin: auto;
+	table-layout: fixed;
+	width: auto;
+
+}
+
+table {
+	margin: 25px auto;
+	width: 100vh;
+	table-layout: fixed;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+td {
+    background: white;
+    border: 1px black solid;
+    padding: 2rem 2rem;
+}
+
+td:hover {
+    background: #eaeaea;
 }
