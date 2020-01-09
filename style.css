@@ -5,6 +5,12 @@
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+	background: #2980b9;
+	background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+	background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+}
+
 header {
 	margin: auto;
 	padding: 1rem 0;
@@ -38,10 +44,24 @@ header .command-center select {
 	margin: 0 1rem;
 }
 
-body {
-	background: #2980b9;
-	background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
-	background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+header .command-center select {
+	outline: none;
+}
+
+header .command-center #color-menu option {
+	color: black;
+}
+
+header .command-center #color-menu #slategray,
+header .command-center #color-menu #deeppink,
+header .command-center #color-menu #green,
+header .command-center #color-menu #darkgreen,
+header .command-center #color-menu #blue,
+header .command-center #color-menu #darkblue,
+header .command-center #color-menu #darkviolet,
+header .command-center #color-menu #purple,
+header .command-center #color-menu #indigo {
+	color: white;
 }
 
 /* Grid */

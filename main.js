@@ -4,9 +4,20 @@ let currentColor = getSelectedColor = () => {
 }
 
 // Set the current color
-document.querySelector('#color-menu').addEventListener('change', () => {
+document.querySelector('#color-menu').addEventListener('change', (e) => {
     currentColor = getSelectedColor()
+    const darkColors = ['slategray', 'deeppink', 'green', 'darkgreen', 'blue', 'darkblue', 'darkviolet', 'purple', 'indigo']
+    let selectedColor = e.srcElement.value
+    if (darkColors.includes(selectedColor)) {
+        e.srcElement.style.color = 'white'
+        e.srcElement.style.backgroundColor = currentColor
+    } else {
+        e.srcElement.style.color = 'black'
+        e.srcElement.style.backgroundColor = currentColor
+    }
+    
 })
+
 
 
 let holding = false // handle drag event
