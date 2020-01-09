@@ -44,6 +44,10 @@ updateTable = (operation) => {
             fillAll()
             updateTable()
             break;
+        case 'fillUncolored':
+            fillUncolored()
+            updateTable()
+            break; 
         default:
             // update new cells with event listeners
             document.querySelectorAll('td').forEach((cell) => { // add listeners to every cell
@@ -118,6 +122,21 @@ fillAll = () => {
     const cells = document.querySelectorAll('td')
     cells.forEach((cell) => {
         changeCellColor(cell)
+    })
+}
+
+// fill uncolored cells
+fillUncolored = () => {
+    // grab all the cells
+    const cells = document.querySelectorAll('td')
+    cells.forEach((cell) => {
+        const cellColor = cell.style.backgroundColor
+        
+        // look for unfilled cells
+        if (cellColor === 'white' || cellColor === undefined || cellColor === '') {
+            // fill in the cells
+            changeCellColor(cell)
+        }
     })
 }
 
