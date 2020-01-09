@@ -6,9 +6,15 @@
 }
 
 body {
+	min-height: 100vh;
+	min-width: 100vw;
+	width: max-content;
 	background: #2980b9;
 	background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
 	background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+	background-size: 100% auto;
+	/* background-size: cover;
+	background-repeat: no-repeat; */
 }
 
 header {
@@ -16,13 +22,15 @@ header {
 	padding: 1rem 0;
 	position: sticky;
 	top: 0;
+	left: 0;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 	font-size: 1.5rem;
 	text-align: center;
 
-	background: #757f9a repeat no-repeat contain;
+	background: #757f9a;
 	background: -webkit-linear-gradient(to top, #d7dde8, #757f9a);
 	background: linear-gradient(to top, #d7dde8, #757f9a);
+	/* background-size: 100% auto; */
 }
 
 header h1 {
@@ -66,14 +74,12 @@ header .command-center #color-menu #indigo {
 
 /* Grid */
 body .content {
-	height: 100vh;
-	margin: auto;
+	/* height: 100vh; */
+	margin: 25px;
 }
 
 table {
 	margin: 25px auto;
-	width: 100vh;
-	width: auto;
 	table-layout: fixed;
     border-collapse: collapse;
 	empty-cells: show;
