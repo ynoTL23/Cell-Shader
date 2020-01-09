@@ -40,6 +40,10 @@ updateTable = (operation) => {
             deleteCol() // delete the last column
             updateTable() // update cells with listeners
             break;
+        case 'fillAll':
+            fillAll()
+            updateTable()
+            break;
         default:
             // update new cells with event listeners
             document.querySelectorAll('td').forEach((cell) => { // add listeners to every cell
@@ -106,6 +110,15 @@ deleteCol = () => {
             row.deleteCell(-1)
         })
     }
+}
+
+// fill all cells a single color
+fillAll = () => {
+    // grab all the cells
+    const cells = document.querySelectorAll('td')
+    cells.forEach((cell) => {
+        changeCellColor(cell)
+    })
 }
 
 // change the cell's color
