@@ -60,20 +60,20 @@ body .content table {
 
 }
 
+body .content {
+	margin-top: 10vh;
+}
+
 table {
 	margin: 25px auto;
 	width: 100vh;
 	table-layout: fixed;
     border-collapse: collapse;
-    empty-cells: show;
+	empty-cells: show;
 }
 
 td {
-    background: white;
+    background-color: white;
     border: 1px black solid;
     padding: 2rem 2rem;
-}
-
-td:hover {
-    background: #eaeaea;
 }

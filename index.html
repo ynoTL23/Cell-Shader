@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
-        <title>DOM Challenge 2</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM Challenge 2</title>
+</head>
 
-    <body>
-        <!-- Title and Command Center -->
-        <header>
-            <h1>DOM Challenge 2</h1>
-            <!-- Options to manipulate the grid -->
-            <div class="command-center">
-                <button class="buttons" id="add-row">Add Row</button>
-                <button class="buttons" id="delete-row">Delete Row</button>
-                <button class="buttons" id="add-col">Add Column</button>
-                <button class="buttons" id="delete-col">Delete Column</button>
-                <select name="color-menu" id="color-menu">
+<body>
+    <!-- Title and Command Center -->
+    <header>
+        <h1>DOM Challenge 2</h1>
+        <!-- Options to manipulate the grid -->
+        <div class="command-center">
+            <button class="buttons" onclick="updateTable('addRow')">Add Row</button>
+            <button class="buttons" onclick="updateTable('deleteRow')">Delete Row</button>
+            <button class="buttons" onclick="updateTable('addCol')">Add Column</button>
+            <button class="buttons" onclick="updateTable('deleteCol')">Delete Column</button>
+            <select name="color-menu" id="color-menu">
+                    <option value="white" selected>White</option>
                     <option value="red">Red</option>
                     <option value="green">Green</option>
                     <option value="blue">Blue</option>
                     <option value="purple">Purple</option>
                     <option value="orange">Orange</option>
                 </select>
-                <button class="buttons" id="fill-all">Fill all cells</button>
-                <button class="buttons" id="fill-uncoloreds">Fill all uncolored cells</button>
-                <button class="buttons" id="reset-cells">Reset cells</button>
-            </div>
-        </header>
-        <div class="content">
-            <table class="table-show">
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            <button class="buttons" id="fill-all">Fill all cells</button>
+            <button class="buttons" id="fill-uncoloreds">Fill all uncolored cells</button>
+            <button class="buttons" id="reset-cells">Reset cells</button>
         </div>
+    </header>
+    <div class="content">
+        <table ondragstart="return false">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 
-        <script src="main.js"></script>
-    </body>
+    <script src="main.js"></script>
+</body>
 
 </html>
