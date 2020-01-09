@@ -38,6 +38,7 @@ header .command-center select {
 	margin: 0 1rem;
 }
 
+/* Grid */
 body .content {
 	height: 100vh;
 
@@ -46,27 +47,14 @@ body .content {
 	background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
 }
 
-body .content #grid {
-	width: 90%;
-	margin: auto;
-
-	border: 1px red solid;
-}
-
-body .content table {
-	margin: auto;
-	table-layout: fixed;
-	width: auto;
-
-}
-
 body .content {
-	margin-top: 10vh;
+	margin-top: 5vh;
 }
 
 table {
 	margin: 25px auto;
 	width: 100vh;
+	width: auto;
 	table-layout: fixed;
     border-collapse: collapse;
 	empty-cells: show;
