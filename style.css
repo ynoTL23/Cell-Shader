@@ -9,12 +9,12 @@ header {
 	margin: auto;
 	padding: 1rem 0;
 	position: sticky;
-	top: 0px;
+	top: 0;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 	font-size: 1.5rem;
 	text-align: center;
 
-	background: #757f9a;
+	background: #757f9a repeat no-repeat contain;
 	background: -webkit-linear-gradient(to top, #d7dde8, #757f9a);
 	background: linear-gradient(to top, #d7dde8, #757f9a);
 }
@@ -38,17 +38,16 @@ header .command-center select {
 	margin: 0 1rem;
 }
 
-/* Grid */
-body .content {
-	height: 100vh;
-
+body {
 	background: #2980b9;
 	background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
 	background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
 }
 
+/* Grid */
 body .content {
-	margin-top: 5vh;
+	height: 100vh;
+	margin: auto;
 }
 
 table {
