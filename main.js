@@ -48,6 +48,10 @@ updateTable = (operation) => {
             fillUncolored()
             updateTable()
             break; 
+        case 'reset':
+            reset()
+            updateTable()
+            break; 
         default:
             // update new cells with event listeners
             document.querySelectorAll('td').forEach((cell) => { // add listeners to every cell
@@ -137,6 +141,17 @@ fillUncolored = () => {
             // fill in the cells
             changeCellColor(cell)
         }
+    })
+}
+
+reset = () => {
+    // grab all the cells
+    const cells = document.querySelectorAll('td')
+    currentColor = 'white' // set color to white
+    // go through each cell
+    cells.forEach((cell) => {
+        // fill in the cells
+        changeCellColor(cell)
     })
 }
 
