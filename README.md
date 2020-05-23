@@ -23,4 +23,4 @@ Ultimately, the user will be able to:
 
 ---
 
-## [Demo the page here](https://lehman-cuny2x.github.io/01-08-2020-day-5-javascript-dom-challenges-ii-ynoTL23/)
+## [Demo the page here](https://ynoTL23.github.io/Cell-Shader/)
